@@ -1,4 +1,4 @@
-- name: Install the Neutron
+- name: Install Neutron for ubuntu
   apt:
     name: neutron-linuxbridge-agent
     state: present
@@ -22,7 +22,7 @@
       username = neutron
       password = 1234
 
-- name: Restart the Neutron
+- name: Restarting Neutron
   service:
      name: neutron-linuxbridge-agent
      state: restarted
